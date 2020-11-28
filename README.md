@@ -20,8 +20,12 @@ I have used Opencv library of python for integrating the web cam of the laptop t
         - [Collection of picture Data](#data-collection)
         - [Building and Training Model](#build)
     - [Testing the System](#testing)
-        - [Capturing images](#img-capture)
-        - [Tessting and Implementing](#implem)
+        - [Testing using Image](#img-test)
+            - [Capturing images](#img-capture)
+            - [Testing and Implementing](#img-implem)
+        - [Testing using Video](#testing)
+            - [Capturing Video](#vid-capture)
+            - [Testing and Implementing](#vid-implem)
 
 
 ## Prerequisites <a name='prerequisites'></a>
@@ -61,16 +65,29 @@ Dataset is taken from a data source from a Challenge on Kaggle. It contains 3 fo
 - We train the model using Keras sequential API of Tensorflow to train the model in various aspects and different angles and ranges of picture properties. We train the model in 30 epochs for gaining good accuracy. We save the model as FaDetNet.h5 for further testing and implementing of trained model.
 
 
-> ### Testing the System <a name='testning'></a>
+> ### Testing the System <a name='testing'></a>
 
-#### Capturing images <a name='img-capture'></a>
+#### Testing using Image <a name='img-test'></a>
+
+##### Capturing images <a name='img-capture'></a>
 - We use methods in OpenCV library to capture images using the web camera of laptop and save the a set of 10 images in a rapid succession to test the model trained.
 - These images are saved into a seperate folder 'input' 
 
-#### Testing and Implementing Model <a name='implem'></a>
+##### Testing and Implementing Model <a name='img-implem'></a>
 
 - The images recorded are tested using the predict method of the model trained earlier i.e., FaDetNet.h5. 
 - All the images are tested to get output Mask or No Mask. If the number of Mask outputs are greater than No mask outputs, the Final output is given as Mask and vice versa.
+
+#### Testing using Video <a name='vid-test'></a>
+
+##### Capturing video <a name='vid-capture'></a>
+- We use methods in OpenCV library to capture a video using the web camera of laptop and save the video to test the model trained.
+- These video is saved into 'input' 
+
+##### Testing and Implementing Model <a name='vid-implem'></a>
+
+- The video recorded is divided into a definite number of frames and each frame is tested using the predict method of the model trained earlier i.e., FaDetNet.h5. 
+- Then the result is shown by highlighting faces in each frame of the video as No Mask and Mask
 
 ## Developer <a name='developers'></a>
 * Kamal Yeshodhar Shastry Gattu
