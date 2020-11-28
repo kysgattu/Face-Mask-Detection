@@ -26,7 +26,7 @@ I have used Opencv library of python for integrating the web cam of the laptop t
         - [Testing using Video](#testing)
             - [Capturing Video](#vid-capture)
             - [Testing and Implementing](#vid-implem)
-
+    - [Test Results](#results)            
 
 ## Prerequisites <a name='prerequisites'></a>
 
@@ -88,6 +88,13 @@ Dataset is taken from a data source from a Challenge on Kaggle. It contains 3 fo
 
 - The video recorded is divided into a definite number of frames and each frame is tested using the predict method of the model trained earlier i.e., FaDetNet.h5. 
 - Then the result is shown by highlighting faces in each frame of the video as No Mask and Mask
+
+> ### Test Results <a name='results'></a>
+
+![alt tag](https://github.com/kysgattu/Face-Mask-Detection/blob/main/Results/Mask.png)
+![alt tag](https://github.com/kysgattu/Face-Mask-Detection/blob/main/Results/No%20Mask.png)
+![alt tag](https://github.com/kysgattu/Face-Mask-Detection/blob/main/Results/PhotoTest.png)
+
 
 ## Developer <a name='developers'></a>
 * Kamal Yeshodhar Shastry Gattu
