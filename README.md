@@ -6,7 +6,7 @@ I have taken a comprehensive dataset 3 seta of images containing images of two c
 
 I have saved the model as as MD5 model 'FaDetNet.h5'.
 
-Testing is done by two ways i.e. using a video input and photo input.I have used Opencv library of python for integrating the web cam of the laptop to capture images and video which are tested with the prediction function of the trained model to get a binary output.In case of image, if more number of captured images are predicted as No Mask then output will be given as NO Mask else it will be given as Mask and in case of video, all the faces present in each frame are checked for masks using trained model and result is shown above the face.
+Testing is done by two ways i.e. using a video input and photo input.I have used Opencv library of python for integrating the web cam of the laptop to capture images and video which are tested with the prediction function of the trained model to get a binary output.In case of image, if more number of captured images are predicted as No Mask then output will be given as NO Mask else it will be given as Mask and in case of video, all the faces present in each frame are checked for masks using trained model and result is shown above the face and a Beep Sound is given if there is no mask.
 
 ## Table of contents
 
@@ -87,7 +87,8 @@ Dataset is taken from a data source from a Challenge on Kaggle. It contains 3 fo
 ##### Testing and Implementing Model <a name='vid-implem'></a>
 
 - The video recorded is divided into a definite number of frames and each frame is tested using the predict method of the model trained earlier i.e., FaDetNet.h5. 
-- Then the result is shown by highlighting faces in each frame of the video as No Mask and Mask
+- Then the result is shown by highlighting faces in each frame of the video as No Mask and Mask.
+- If Mask is not detected on the face, A beep sound alert is given.
 
 > ### Test Results <a name='results'></a>
 
