@@ -6,7 +6,7 @@ I have taken a comprehensive dataset 3 seta of images containing images of two c
 
 I have saved the model as as MD5 model 'FaDetNet.h5'.
 
-I have used Opencv library of python for integrating the web cam of the laptop to capture image and save 10 continuous images in an interval of 1 to 3 seconds. and the images are tested with the prediction function of the trained model to get a binary output. If more number of captured images are predicted as No Mask then output will be given as NO Mask else it will be given as Mask.
+Testing is done by two ways i.e. using a video input and photo input.I have used Opencv library of python for integrating the web cam of the laptop to capture images and video which are tested with the prediction function of the trained model to get a binary output.In case of image, if more number of captured images are predicted as No Mask then output will be given as NO Mask else it will be given as Mask and in case of video, all the faces present in each frame are checked for masks using trained model and result is shown above the face.
 
 ## Table of contents
 
@@ -26,7 +26,7 @@ I have used Opencv library of python for integrating the web cam of the laptop t
         - [Testing using Video](#testing)
             - [Capturing Video](#vid-capture)
             - [Testing and Implementing](#vid-implem)
-
+    - [Test Results](#results)            
 
 ## Prerequisites <a name='prerequisites'></a>
 
@@ -88,6 +88,13 @@ Dataset is taken from a data source from a Challenge on Kaggle. It contains 3 fo
 
 - The video recorded is divided into a definite number of frames and each frame is tested using the predict method of the model trained earlier i.e., FaDetNet.h5. 
 - Then the result is shown by highlighting faces in each frame of the video as No Mask and Mask
+
+> ### Test Results <a name='results'></a>
+
+![alt tag](https://github.com/kysgattu/Face-Mask-Detection/blob/main/Results/Mask.png)
+![alt tag](https://github.com/kysgattu/Face-Mask-Detection/blob/main/Results/No%20Mask.png)
+![alt tag](https://github.com/kysgattu/Face-Mask-Detection/blob/main/Results/PhotoTest.png)
+
 
 ## Developer <a name='developers'></a>
 * Kamal Yeshodhar Shastry Gattu
