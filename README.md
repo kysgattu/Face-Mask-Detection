@@ -112,3 +112,6 @@ Contact me:     <gkyshastry0502@gmail.com> , <kysgattu0502@gmail.com>
 ](https://www.kaggle.com/prithwirajmitra/covid-face-mask-detection-dataset)
 
 
+
+###### Note:
+For Trained Model Run FaDetNet.ipnyb or FaDetNet.py or just send me an email ;-)
