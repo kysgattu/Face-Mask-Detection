@@ -26,7 +26,11 @@ Testing is done by two ways i.e. using a video input and photo input.I have used
         - [Testing using Video](#testing)
             - [Capturing Video](#vid-capture)
             - [Testing and Implementing](#vid-implem)
-    - [Test Results](#results)            
+    - [Test Results](#results)
+ 
+- [Developers](#developers)
+- [Links](#links)
+- [References](#references)            
 
 ## Prerequisites <a name='prerequisites'></a>
 
@@ -47,9 +51,6 @@ OR
 ### Dataset Description <a name='dataset-description'></a>
 
 Dataset is taken from a data source from a Challenge on Kaggle. It contains 3 folders of images namesly Train,Test and Validate. Each contains pictures of 2 classes No mask and Mask. 
-- [Developers](#developers)
-- [Links](#links)
-- [References](#references)
 
 
 ## System Modules <a name='modules'></a>
